@@ -1,0 +1,17 @@
+ul#nav li{
+  list-style-type: none;
+  display:inline-block; /* расположить пункты горизонтально */
+  // margin-right: 5px; /* Отступ слева */
+  margin: 2px;;
+  border: 1px solid #000; /* Рамка вокруг текста */
+  padding: 3px; /* Поля вокруг текста */
+  // background-color:lightgray;
+}
+.nav-item {
+  background-color:lightgray;
+}
+
+.link-active :visited{
+  color:orangered;
+  
+}

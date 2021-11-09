@@ -1,0 +1,35 @@
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-end">
+  <ul id="nav">
+    <li
+      class="nav-item"
+      [routerLinkActive]="['link-active']"
+      [routerLinkActiveOptions]="{ exact: true }"
+    >
+      <a [routerLink]="['/']">Home</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a  [routerLink]="['/add-order']">Записаться к мастеру</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a [routerLink]="['/gallery']">Галерея</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a [routerLink]="['/reviews']">Отзывы</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a [routerLink]="['/services']">Услуги</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a [routerLink]="['/contacts']">Контакты</a>
+    </li>
+
+    <li class="nav-item" [routerLinkActive]="['link-active']">
+      <a [routerLink]="['/entrance']">Вход</a>
+    </li>
+  </ul>
+</div>
