@@ -22,4 +22,6 @@ export class NailServiceComponent implements OnInit {
       this.nailservices = data;
     });
   }
+
+  
 }

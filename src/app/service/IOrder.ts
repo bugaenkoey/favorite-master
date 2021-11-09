@@ -1,7 +1,7 @@
 export interface IOrder{
     id:number;
     service:string;
-    serviseId:number;
+    serviceId:number;
     user:string;
     userId:number;
     done:boolean;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasService } from '../datas.service';
+import { IOrder } from '../service/IOrder';
 import { ORDERS } from './mock-reviews';
 
 @Component({
@@ -8,9 +10,21 @@ import { ORDERS } from './mock-reviews';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  
+  // public orders = ORDERS;
+
+  constructor(public datasService: DatasService) {}
 
   ngOnInit(): void {
+    this.getServises();
   }
-  public orders = ORDERS;
+
+  public orders: IOrder[] | undefined;
+
+  getServises() {
+    this.datasService.getOrders().subscribe((data) => {
+      console.log(data);
+      this.orders = data;
+    });
+  }
 }

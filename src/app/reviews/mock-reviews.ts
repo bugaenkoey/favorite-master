@@ -4,7 +4,7 @@ export const ORDERS: IOrder[] = [
   {
     id: 1,
     service: '',
-    serviseId: 1,
+    serviceId: 1,
     user: '',
     userId: 1,
     done: false,
@@ -15,7 +15,7 @@ export const ORDERS: IOrder[] = [
   {
     id: 2,
     service: '',
-    serviseId: 2,
+    serviceId: 2,
     user: '',
     userId: 2,
     done: false,
@@ -26,7 +26,7 @@ export const ORDERS: IOrder[] = [
   {
     id: 3,
     service: '',
-    serviseId: 3,
+    serviceId: 3,
     user: '',
     userId: 3,
     done: false,
@@ -37,7 +37,7 @@ export const ORDERS: IOrder[] = [
   {
     id: 4,
     service: '',
-    serviseId: 4,
+    serviceId: 4,
     user: '',
     userId: 4,
     done: false,
