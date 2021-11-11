@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatasService } from '../datas.service';
+import { NAILSERVICES } from '../mock-nailServices';
 import { INailServise as INailService } from '../service/INailServise';
 
 @Component({
@@ -17,11 +18,16 @@ export class NailServiceComponent implements OnInit {
   public nailservices: INailService[] | undefined;
 
   getServises() {
-    this.datasService.getNailServises().subscribe((data) => {
-      console.log(data);
-      this.nailservices = data;
-    });
+    this.datasService.getNailServises().subscribe(
+      (data) => {
+        console.log(data);
+        this.nailservices = data;
+      },
+      (error) => {
+        console.log('not server!' + error.message);
+        alert(' Сервер не отвечает! ');
+        this.nailservices = NAILSERVICES;
+      }
+    );
   }
-
-  
 }

@@ -11,6 +11,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { NailServiceComponent } from './nail-service/nail-service.component';
 import { DatasService } from './datas.service';
 import {HttpClientModule} from '@angular/common/http';
+import { AddOrderComponent } from './add-order/add-order.component';
+import { AddUserComponent } from './add-user/add-user.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import {HttpClientModule} from '@angular/common/http';
     ContactsComponent,
     EntranceComponent,
     NotFoundComponent,
+    AddOrderComponent,
+    AddUserComponent,
   ],
   imports: [
     BrowserModule,
