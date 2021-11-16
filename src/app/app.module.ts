@@ -13,6 +13,7 @@ import { DatasService } from './datas.service';
 import {HttpClientModule} from '@angular/common/http';
 import { AddOrderComponent } from './add-order/add-order.component';
 import { AddUserComponent } from './add-user/add-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { AddUserComponent } from './add-user/add-user.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [DatasService],
   bootstrap: [AppComponent]

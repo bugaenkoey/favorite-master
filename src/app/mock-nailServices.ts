@@ -17,3 +17,15 @@ export const NAILSERVICES: INailServise[] = [
     {id: 1,name: 'Наращивание',description: 'Наращивание', price: 350, duration: 3.5 },
     {id: 1,name: 'Выкладной френч',description: 'Выкладной френч', price: 400, duration: 4 },
 ];
+
+export const GALLERY: string[] =[
+   "https://www.instagram.com/p/CVDgtFkIBPF/",
+   "https://www.instagram.com/p/CU5JoxOIeaM/",
+   "https://www.instagram.com/p/CU15TszoUp/",
+   "https://www.instagram.com/p/CU0JgjNoAlu/",
+   "https://www.instagram.com/p/CUvQMwnI6ib/",
+   "https://www.instagram.com/p/CUskxejIiU3/",
+   "https://www.instagram.com/p/CULKokDoZWf/",
+   "https://www.instagram.com/p/CT2SL79I6pW/"
+
+]

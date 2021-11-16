@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatasService } from '../datas.service';
+import { GALLERY } from '../mock-nailServices';
 
 @Component({
   selector: 'app-gallery',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(public datasService: DatasService) { }
 
   ngOnInit(): void {
   }
+public galery:string[] = GALLERY;
+
+getGalery(){
+
+
+}
+
+
 
 }
