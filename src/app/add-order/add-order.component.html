@@ -1,45 +1,57 @@
 <p>add-order works!</p>
 
 <form [formGroup]="myForm" (ngSubmit)="submit()">
-    <div>
-      <label>SurName</label>
-      <input type="text" formControlName="surname" />
-    </div>
-  
-    <div>
-      <label>MyName</label>
-      <input type="text" formControlName="myname" />
-    </div>
-  
-    <div>
-      <label>Phone</label>
-      <input type="tel" formControlName="tel" />
-    </div>
-  
-    <div class="select-nail-services">
-      <label>service</label>
-      <select id="" formControlName="service">
-        <option value="" *ngFor="let item of nailservices" [ngValue]="item.name">
-          {{ item.name }} {{ item.price }}грн. По времени {{ item.duration }} часа
-        </option>
-      </select>
-    </div>
-  
-    <div>
-      <label>Data</label>
-      <input
-        type="date"
-        formControlName="date"
-        min="{{ carent_date }}"
-        max="{{ max_date }}"
-      />
-    </div>
-  
-    <div>
-      <label>Note</label>
-      <input type="text" formControlName="note" />
-    </div>
-  
-    <button type="submit" [disabled]="myForm.invalid">add user</button>
-  </form>
-  
+  <div>
+    <label>SurName</label>
+    <input
+      type="text"
+      formControlName="surname"
+      placeholder="Не может быть пустым"
+    />
+
+    <!-- <pre>{{myForm.get('surname').errors | json}}</pre> -->
+    <!-- <div *ngIf="myForm.get('surname').invalid">
+      <small>Не может быть пустым</small>
+    </div> -->
+  </div>
+
+  <div>
+    <label>MyName</label>
+    <input type="text" formControlName="myname" />
+  </div>
+
+  <div>
+    <label>Phone</label>
+    <input
+      type="tel"
+      formControlName="tel"
+      placeholder="Не может быть пустым"
+    />
+  </div>
+
+  <div class="select-nail-services">
+    <label>service</label>
+    <select id="" formControlName="service">
+      <option value="" *ngFor="let item of nailservices" [ngValue]="item.name">
+        {{ item.name }} {{ item.price }}грн. По времени {{ item.duration }} часа
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label>Data</label>
+    <input
+      type="date"
+      formControlName="date"
+      min="{{ carent_date }}"
+      max="{{ max_date }}"
+    />
+  </div>
+
+  <div>
+    <label>Note</label>
+    <input type="text" formControlName="note" />
+  </div>
+
+  <button type="submit" [disabled]="myForm.invalid">add user</button>
+</form>
