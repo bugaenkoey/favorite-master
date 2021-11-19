@@ -4,6 +4,7 @@ export interface IOrder{
     serviceId:number;
     user:string;
     userId:number;
+    dateTime?:string;
     done:boolean;
     note:string;
     comment:string;
